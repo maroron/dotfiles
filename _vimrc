@@ -6,8 +6,8 @@
 " how to adapt -> :source(:so) %
 
 "  encoding
-" set encoding=utf-8
-" set fileencodings=utf-8,cp932,euc-jp,sjis
+set encoding=utf-8
+set fileencodings=utf-8,cp932,euc-jp,sjis
 
 " --- Mapleader ---
 let mapleader = "\<Space>"
@@ -197,6 +197,8 @@ set wrap
 set wildmenu
 " tab line
 set showtabline=2
+" buffer
+set autochdir
 
 " ----------------------------------------------
 "    find options
