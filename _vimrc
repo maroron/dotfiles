@@ -197,10 +197,6 @@ set wrap
 set wildmenu
 " tab line
 set showtabline=2
-" gui font
-" set guifont=Consolas:h12:cSHIFTJIS
-" set guifont=Consolas:h12:cANSI:qDRAFT
-set guifont=HackGen:h12:cSHIFTJIS:qDRAFT
 
 " ----------------------------------------------
 "    find options
