@@ -1,0 +1,28 @@
+" ----------------------------------------------
+"
+"    My gvimrc
+"
+" ----------------------------------------------
+" 透明度
+set transparency=250
+autocmd GUIEnter * set transparency=250
+autocmd FocusGained * set transparency=250
+autocmd FocusLost * set transparency=230
+
+" ハイライト
+highlight CursorLine guibg=DarkBlue
+
+" ツールバーを削除
+set guioptions-=T
+
+"メニューを削除
+set guioptions-=m
+
+" save
+nnoremap <C-s> :browse confirm saveas<cr>
+
+" copy & paste
+set clipboard+=unnamed
+
+" Color Scheme
+colorscheme jellybeans
