@@ -60,7 +60,7 @@ nnoremap sq :q<cr>
 nnoremap [OPENCMD] <nop>
 nmap <leader>e [OPENCMD]
 " nnoremap <silent> [OPENCMD]. :vnew $VIM/vimrc<CR>
-nnoremap <silent> [OPENCMD]. :e $VIM/vimrc<CR>
+nnoremap <silent> [OPENCMD]. :e $HOME/_vimrc<CR>
 nnoremap <silent> [OPENCMD]0 :e %:h<CR>
 nnoremap <silent> [OPENCMD]s :so %<CR>
 nnoremap <silent> [OPENCMD]p :e ~/.vim/rc/dein.toml<CR>
