@@ -59,7 +59,7 @@ nnoremap sq :q<cr>
 " --- Open file ---
 nnoremap [OPENCMD] <nop>
 nmap <leader>e [OPENCMD]
-" nnoremap <silent> [OPENCMD]. :vnew $VIM/vimrc<CR>
+" nnoremap <silent> [OPENCMD]. :vnew $VIM/_vimrc<CR>
 nnoremap <silent> [OPENCMD]. :e $HOME/_vimrc<CR>
 nnoremap <silent> [OPENCMD]0 :e %:h<CR>
 nnoremap <silent> [OPENCMD]s :so %<CR>
