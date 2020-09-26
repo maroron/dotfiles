@@ -29,3 +29,7 @@ set clipboard+=unnamed
 " colorscheme pablo
 colorscheme jellybeans
 
+" gui font
+" set guifont=Consolas:h12:cSHIFTJIS
+" set guifont=Consolas:h12:cANSI:qDRAFT
+set guifont=HackGen:h12:cSHIFTJIS:qDRAFT
