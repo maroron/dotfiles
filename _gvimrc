@@ -25,4 +25,7 @@ nnoremap <C-s> :browse confirm saveas<cr>
 set clipboard+=unnamed
 
 " Color Scheme
+" colorscheme evening
+" colorscheme pablo
 colorscheme jellybeans
+

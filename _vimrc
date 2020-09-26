@@ -150,6 +150,9 @@ set nrformats=
 " tab setting
 set shiftwidth=4 softtabstop=4 expandtab
 
+" indent setting
+" set smartindent
+
 " cmd history
 set history=200
 
@@ -167,10 +170,6 @@ set virtualedit=block
 
 " belloff
 set belloff=all
-
-" color scheme
-" colorscheme evening
-" colorscheme pablo
 
 " background
 highlight Normal ctermbg=none
