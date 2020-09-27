@@ -21,6 +21,10 @@ set guioptions-=m
 " tabを非GUI化する
 set guioptions-=e
 
+" スクロールバーを非表示
+set guioptions-=L
+set guioptions-=r
+
 " save
 nnoremap <C-s> :browse confirm saveas<cr>
 
