@@ -12,6 +12,9 @@ autocmd FocusLost * set transparency=230
 " ハイライト
 highlight CursorLine guibg=DarkBlue
 
+"初期化
+set guioptions&
+
 " ツールバーを削除
 set guioptions-=T
 
