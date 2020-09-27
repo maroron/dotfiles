@@ -18,6 +18,9 @@ set guioptions-=T
 "ƒƒjƒ…[‚ğíœ
 set guioptions-=m
 
+" tab‚ğ”ñGUI‰»‚·‚é
+set guioptions-=e
+
 " save
 nnoremap <C-s> :browse confirm saveas<cr>
 
