@@ -115,7 +115,7 @@ nnoremap <leader>] %
 nnoremap gV `[v`]
 nmap <Leader><Leader> V
 nnoremap <leader>re :%s;\<<C-r><C-w>\>;g<left><left>;
-nnoremap <silent><C-c> :%s/@/  /g<CR>
+nnoremap <silent><C-c> :%s/ã€€/  /g<CR>
 
 " TODO file path
 " nnoremap <C-0> =expand('%:p')<CR>
@@ -143,6 +143,8 @@ vmap <silent> <expr> p <sid>Repl()
 set noundofile
 " backup file
 set nobackup
+" swap file
+set noswapfile
 
 " Input 007 <C-a> -> 008
 set nrformats=
@@ -245,29 +247,29 @@ if &compatible
   set nocompatible
 endif
 
-" ƒvƒ‰ƒOƒCƒ“‚ªÀÛ‚ÉƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚éƒfƒBƒŒƒNƒgƒŠ
+" ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ãŒå®Ÿéš›ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã‚‹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
 let s:dein_dir = expand('~\.vim\dein')
-" dein.vim –{‘Ì
+" dein.vim æœ¬ä½“
 let s:dein_repo_dir = s:dein_dir . '\repos\github.com\Shougo\dein.vim'
 
 " Add the dein installation directory into runtimepath
 if has('vim_starting')
-  " ‰‰ñ‹N“®‚Ì‚İruntimepath‚Édein‚ÌƒpƒX‚ğw’è‚·‚é
+  " åˆå›èµ·å‹•æ™‚ã®ã¿runtimepathã«deinã®ãƒ‘ã‚¹ã‚’æŒ‡å®šã™ã‚‹
   set runtimepath+=~\.vim\dein\repos\github.com\Shougo\dein.vim
 endif
 
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
-  " ƒvƒ‰ƒOƒCƒ“ƒŠƒXƒg‚ğû‚ß‚½ TOML ƒtƒ@ƒCƒ‹
+  " ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ãƒªã‚¹ãƒˆã‚’åã‚ãŸ TOML ãƒ•ã‚¡ã‚¤ãƒ«
   let g:rc_dir    = expand('~\.vim\rc')
   let s:toml      = g:rc_dir . '\dein.toml'
   let s:toml_lazy = g:rc_dir . '\dein_lazy.toml'
 
-  " ‹N“®‚É“Ç‚İ‚Şƒvƒ‰ƒOƒCƒ“ŒQ
+  " èµ·å‹•æ™‚ã«èª­ã¿è¾¼ã‚€ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ç¾¤
   call dein#load_toml(s:toml,      {'lazy': 0})
 
-  " ’x‰„“Ç‚İ‚İ‚µ‚½‚¢ƒvƒ‰ƒOƒCƒ“ŒQ
+  " é…å»¶èª­ã¿è¾¼ã¿ã—ãŸã„ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ç¾¤
   call dein#load_toml(s:toml_lazy, {'lazy': 1})
 
   call dein#end()
@@ -337,44 +339,44 @@ let g:vimtex_compiler_latexmk_engines = { '_' : '-pdfdvi' }
 nnoremap [VTEXCMD] <nop>
 nmap <leader>p [VTEXCMD]
 
-" --- ƒRƒ“ƒpƒCƒ‹ŠÖ˜A ---
+" --- ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«é–¢é€£ ---
 nnoremap <silent> [VTEXCMD]clean :!latexmk -c %<CR>
-" <localleader>ll ‚ğ[VTEXCMD]a ‚É‚µ‚½‚¢‚¯‚Ç‚Å‚«‚È‚¢c
+" <localleader>ll ã‚’[VTEXCMD]a ã«ã—ãŸã„ã‘ã©ã§ããªã„â€¦
 " nnoremap <silent> [VTEXCMD]a <gid>ll
 
-" --- Œ©o‚µŠÖ˜A ---
-" ƒZƒNƒVƒ‡ƒ“(ß)‚ÌŒ©o‚µ
+" --- è¦‹å‡ºã—é–¢é€£ ---
+" ã‚»ã‚¯ã‚·ãƒ§ãƒ³(ç¯€)ã®è¦‹å‡ºã—
 nnoremap <silent> [VTEXCMD]s I\section{}<Esc>i
-" ƒTƒuƒZƒNƒVƒ‡ƒ“(¬ß)‚ÌŒ©o‚µ
+" ã‚µãƒ–ã‚»ã‚¯ã‚·ãƒ§ãƒ³(å°ç¯€)ã®è¦‹å‡ºã—
 nnoremap <silent> [VTEXCMD]ss I\subsection{}<Esc>i
-" ˆø—p
+" å¼•ç”¨
 nnoremap <silent> [VTEXCMD]q I\begin{quotation}<CR>\end{quotation}<Esc>O
 " verbatim
 nnoremap <silent> [VTEXCMD]v I\begin{verbatim}<CR>\end{verbatim}<Esc>O
 
-" --- ŠÂ‹«İ’è ---
+" --- ç’°å¢ƒè¨­å®š ---
 nnoremap <silent> [VTEXCMD]left O\begin{flushleft}<CR>\end{flushleft}<Esc>O
 nnoremap <silent> [VTEXCMD]right O\begin{flushright}<CR>\end{flushright}<Esc>O
 nnoremap <silent> [VTEXCMD]center O\begin{center}<CR>\end{center}<Esc>O
-" ‰Óğ‘‚« E
+" ç®‡æ¡æ›¸ã ãƒ»
 nnoremap <silent> [VTEXCMD]item i\begin{itemize}<CR>\end{itemize}<C-o>O\item 
-" ‰Óğ‘‚« enumerate
+" ç®‡æ¡æ›¸ã enumerate
 nnoremap <silent> [VTEXCMD]enum i\begin{enumerate}<CR>\end{enumerate}<C-o>O\item 
-" ‹r’
+" è„šæ³¨
 nnoremap <silent> [VTEXCMD]foot a\footnote{} <Esc>hi
-" —“ŠO
+" æ¬„å¤–
 nnoremap <silent> [VTEXCMD]out a\marginpar{}<Esc>i
-" ”®
+" æ•°å¼
 " nnoremap <silent> [VTEXCMD]math o\[  \]<Esc>2hi
 nnoremap <silent> [VTEXCMD]math o\begin{equation}<CR>\end{equation}<ESC>O
-" ƒ\[ƒXƒR[ƒh
+" ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰
 " nnoremap <silent> [VTEXCMD]code o\begin{quote}<Esc>o\setlength{\baselineskip}{12pt}<CR>\begin{verbatim}<CR>\end{verbatim}<CR>\end{quote}<Esc>kO
 nnoremap <silent> [VTEXCMD]code O\begin{tcolorbox}[colframe=black!50, colback=white, colbacktitle=black!50, coltitle=white, fonttitle=\bfseries\sffamily, title=title]<CR>\end{tcolorbox}<Esc>O\setlength{\baselineskip}{12pt}<CR>\begin{verbatim}<CR>\end{verbatim}<Esc>O
-" }
+" å›³
 nnoremap <silent> [VTEXCMD]fig O\begin{figure}[H]<CR>\end{figure}<Esc>O\centering<CR>\includegraphics[width=10cm, height=7cm, keepaspectratio, clip]{}<CR>\caption{figure}<Esc>k$i
-" •\
+" è¡¨
 nnoremap <silent> [VTEXCMD]table O\begin{table}[H]<CR>\end{table}<Esc>O\caption{table}<CR>\begin{center}<CR>\end{center}<Esc>O\begin{tabular}{lrr} \\ \toprule<CR>A & B & C \\ \midrule<CR>a & b & c \\ \bottomrule<CR>\end{tabular}<Esc>
-" ‚í‚­‚í‚­‚·‚é˜g
+" ã‚ãã‚ãã™ã‚‹æ 
 nnoremap <silent> [VTEXCMD]waku O\begin{tcolorbox}[colframe=black!50, colback=white, colbacktitle=black!50, coltitle=white, fonttitle=\bfseries\sffamily, title=title]<CR>\end{tcolorbox}<Esc>O
 " index
 nnoremap <silent> [VTEXCMD]index i\index{}<Esc>i
