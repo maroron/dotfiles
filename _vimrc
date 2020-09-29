@@ -201,6 +201,8 @@ set wildmenu
 set showtabline=2
 " buffer
 set autochdir
+" scroll off
+set scrolloff=5
 
 " ----------------------------------------------
 "    find options
