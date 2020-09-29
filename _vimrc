@@ -117,6 +117,12 @@ nmap <Leader><Leader> V
 nnoremap <leader>re :%s;\<<C-r><C-w>\>;g<left><left>;
 nnoremap <silent><C-c> :%s/　/  /g<CR>
 
+" 検索語が画面の真ん中に来るようにする
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+
 " TODO file path
 " nnoremap <C-0> =expand('%:p')<CR>
 
@@ -200,7 +206,7 @@ set wildmenu
 " tab line
 set showtabline=2
 " buffer
-set autochdir
+" set autochdir
 " scroll off
 set scrolloff=5
 
