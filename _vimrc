@@ -123,6 +123,14 @@ nnoremap N Nzz
 nnoremap * *zz
 nnoremap # #zz
 
+
+" insert mode
+inoremap <C-d> <ESC>lxi
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
+
 " TODO file path
 " nnoremap <C-0> =expand('%:p')<CR>
 
