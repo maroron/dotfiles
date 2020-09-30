@@ -2,6 +2,9 @@
 repo = 'nanotech/jellybeans.vim'
 
 [[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
 repo = 'simeji/winresizer'
 
 [[plugins]]
