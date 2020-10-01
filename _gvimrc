@@ -44,5 +44,8 @@ colorscheme jellybeans
 " set guifont=Consolas:h12:cANSI:qDRAFT
 set guifont=HackGen:h12:cSHIFTJIS:qDRAFT
 
+command Mid :set guifont=HackGen:h12:cSHIFTJIS guifontwide=HackGen:h12
+command Big :set guifont=HackGen:h20:cSHIFTJIS guifontwide=HackGen:h20
+
 " �ő剻
 autocmd GUIEnter * simalt ~x
