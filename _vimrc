@@ -180,7 +180,7 @@ set cursorline
 " display ruler
 set ruler
 " display tab or CR
-set list
+set nolist
 " visual select
 set virtualedit=block
 
