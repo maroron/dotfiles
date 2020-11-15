@@ -3,9 +3,6 @@
 "    My vsvimrc
 "
 " ----------------------------------------------
-set number
-set relativenumber
-
 " --- Mapleader ---
 let mapleader = "\<Space>"
 let g:maplocalleader = "\<Space>"
@@ -74,4 +71,14 @@ inoremap <C-a> <Home>
 inoremap <C-e> <End>
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
+
+
+" ----------------------------------------------
+"
+"    various settings
+"
+" ----------------------------------------------
+set number
+set cursorline
+set virtualedit=block
 
