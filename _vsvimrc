@@ -61,3 +61,17 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>] %
 nnoremap gV `[v`]
 nmap <Leader><Leader> V
+
+" 検索語が画面の真ん中に来るようにする
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+
+" insert mode
+inoremap <C-d> <ESC>lxi
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
+
