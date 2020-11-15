@@ -1,4 +1,5 @@
 mklink %HOMEPATH%"\_vimrc" %HOMEPATH%"\dotfiles\_vimrc"
+mklink %HOMEPATH%"\_vsvimrc" %HOMEPATH%"\dotfiles\_vsvimrc"
 mklink %HOMEPATH%"\_gvimrc" %HOMEPATH%"\dotfiles\_gvimrc"
 mklink %HOMEPATH%"\.condarc" %HOMEPATH%"\dotfiles\.condarc"
 
