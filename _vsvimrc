@@ -6,3 +6,24 @@
 set number
 set relativenumber
 
+" --- Mapleader ---
+let mapleader = "\<Space>"
+let g:maplocalleader = "\<Space>"
+
+" --- Split ---
+"nnoremap [SPLITCMD]
+nnoremap sv :<c-u>vsplit<cr>
+nnoremap ss :<c-u>split<cr>
+
+nnoremap sh <C-w>h
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap sw <C-w>w
+
+nnoremap sH <C-w>H
+nnoremap sJ <C-w>J
+nnoremap sK <C-w>K
+nnoremap sL <C-w>L
+
+nnoremap sq :q<cr>
